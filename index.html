@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Aitken</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-logo">ma<span class="accent">@</span>portfolio<span class="cursor">_</span></div>
+        <ul class="nav-links">
+            <li><a href="#about">about</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="hero">
+        <div class="hero-content">
+            <div class="terminal-prompt">
+                <span class="dim">~/portfolio</span> <span class="accent">$</span> <span class="dim">whoami</span>
+            </div>
+            <h1 class="hero-name">Max Aitken</h1>
+            <div class="hero-role">
+                <span class="accent">&gt; </span><span id="typed-role"></span><span class="cursor blink">|</span>
+            </div>
+            <div class="hero-links">
+                <a href="https://github.com/maxai472" target="_blank" class="hero-link">
+                    <span class="link-prefix">gh://</span>maxai472
+                </a>
+                <a href="https://www.linkedin.com/in/max-aitken-a9a73920a/" target="_blank" class="hero-link">
+                    <span class="link-prefix">li://</span>max-aitken
+                </a>
+                <a href="mailto:maxaitken472@gmail.com" class="hero-link">
+                    <span class="link-prefix">mail://</span>maxaitken472
+                </a>
+            </div>
+        </div>
+        <div class="scroll-hint">scroll_down <span class="accent">▼</span></div>
+    </section>
+
+    <section id="about" class="fade-section">
+        <div class="section-header">
+            <span class="accent">$</span> cat about.txt
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Project Quality Engineer at <span class="accent">Volvo Trucks</span>, where I own the technical quality of delivered products across cross-functional teams.</p>
+                <p>Pursuing a dual degree in <span class="accent">Engineering Mechatronics</span> and <span class="accent">Computer Science</span> — bridging embedded systems, software, and everything in between.</p>
+                <p>I build things close to the metal: custom hardware, systems software, and self-hosted infrastructure. Currently researching edge AI approaches to real-world traffic management in collaboration with Volvo.</p>
+            </div>
+            <div class="about-skills">
+                <div class="skill-group">
+                    <span class="skill-label">languages</span>
+                    <div class="skill-tags">
+                        <span class="tag">C</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Bash</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <span class="skill-label">hardware</span>
+                    <div class="skill-tags">
+                        <span class="tag">STM32</span>
+                        <span class="tag">KiCad</span>
+                        <span class="tag">UART / SPI / I2C</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <span class="skill-label">infrastructure</span>
+                    <div class="skill-tags">
+                        <span class="tag">Proxmox</span>
+                        <span class="tag">Linux</span>
+                        <span class="tag">Docker</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <span class="skill-label">domains</span>
+                    <div class="skill-tags">
+                        <span class="tag">Project Quality</span>
+                        <span class="tag">Edge AI</span>
+                        <span class="tag">Systems Programming</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="fade-section">
+        <div class="section-header">
+            <span class="accent">$</span> ls -la ./projects/
+        </div>
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <div class="project-header">
+                    <span class="tag project-type">embedded</span>
+                    <span class="project-status status-active">● active</span>
+                </div>
+                <h3 class="project-title">STM32 Dev Board</h3>
+                <p class="project-desc">Custom PCB development board built around the STM32 microcontroller. Designed from schematic to layout, with a focus on peripheral access and hands-on hardware debugging.</p>
+                <div class="project-footer">
+                    <span class="tech">C</span>
+                    <span class="tech">STM32</span>
+                    <span class="tech">KiCad</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <span class="tag project-type">systems</span>
+                    <span class="project-status status-active">● active</span>
+                </div>
+                <h3 class="project-title">Shelly</h3>
+                <p class="project-desc">A Unix shell written in C. Implements command parsing, process forking, piping, and built-in commands from scratch — no shortcuts, no abstractions.</p>
+                <div class="project-footer">
+                    <span class="tech">C</span>
+                    <span class="tech">POSIX</span>
+                    <a href="https://github.com/maxai472" target="_blank" class="project-link">github →</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <span class="tag project-type">infrastructure</span>
+                    <span class="project-status status-running">● running</span>
+                </div>
+                <h3 class="project-title">Home Server</h3>
+                <p class="project-desc">Self-hosted infrastructure running on Proxmox VE. Manages VMs, LXC containers, and personal services — operated as a personal homelab for learning and experimentation.</p>
+                <div class="project-footer">
+                    <span class="tech">Proxmox</span>
+                    <span class="tech">Linux</span>
+                    <span class="tech">Networking</span>
+                </div>
+            </div>
+
+            <div class="project-card featured">
+                <div class="project-header">
+                    <span class="tag project-type">research</span>
+                    <span class="project-status status-research">◐ in progress</span>
+                </div>
+                <h3 class="project-title">Edge AI Traffic Management</h3>
+                <p class="project-desc">Research project in collaboration with Volvo Trucks. Investigating an edge AI approach to real-time traffic management — running inference at the edge to minimise latency and reduce dependency on centralised infrastructure.</p>
+                <div class="project-footer">
+                    <span class="tech">Edge AI</span>
+                    <span class="tech">Computer Vision</span>
+                    <span class="tech">Volvo Trucks</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="fade-section">
+        <div class="section-header">
+            <span class="accent">$</span> cat contact.txt
+        </div>
+        <p class="contact-intro">Open to collaborations, research discussions, and interesting problems.</p>
+        <div class="contact-links">
+            <a href="mailto:maxaitken472@gmail.com" class="contact-item">
+                <span class="contact-label">email</span>
+                <span class="contact-value">maxaitken472@gmail.com</span>
+                <span class="contact-arrow">→</span>
+            </a>
+            <a href="https://github.com/maxai472" target="_blank" class="contact-item">
+                <span class="contact-label">github</span>
+                <span class="contact-value">github.com/maxai472</span>
+                <span class="contact-arrow">→</span>
+            </a>
+            <a href="https://www.linkedin.com/in/max-aitken-a9a73920a/" target="_blank" class="contact-item">
+                <span class="contact-label">linkedin</span>
+                <span class="contact-value">max-aitken-a9a73920a</span>
+                <span class="contact-arrow">→</span>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <span class="dim">~/portfolio</span> <span class="accent">$</span> <span class="dim">exit 0</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
